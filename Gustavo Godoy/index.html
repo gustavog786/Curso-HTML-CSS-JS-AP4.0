@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML</title>
+</head>
+
+<body>
+  <H1 align="center">Que es HTML?</H1>
+  <p>El Lenguaje de
+    Marcado de Hipertexto o Hyper Text Markup Language (HTML) es el lenguaje que se utiliza para
+    estructurar y desplegar una página web y sus contenidos respectivos. HTML es el lenguaje con el que se escribe
+    el contenido de las páginas web. Las páginas web pueden ser vistas por el usuario mediante un tipo de aplicación
+    llamada cliente web o más comúnmente "navegador". Podemos decir por lo tanto que el HTML es el lenguaje usado
+    para especificar el contenido que los navegadores deben representar a la hora de mostrar una página web.</p>
+  <br>
+  <h2>Indice</h2>
+  <ol>
+    <li><a href="#a1">Anatomia de una etiqueta html</a></li>
+    <li><a href="#a2">Anatomia de un documento html</a></li>
+    <li><a href="#a3">Sintaxix html</a></li>
+    <li><a href="#a4">Formateo de Letra</a></li>
+    <li><a href="#a5">Encabezados</a></li>
+    <li><a href="#a6">Listas en HTML</a></li>
+    <li><a href="#a7">Imagenes en HTML</a></li>
+    <li><a href="#a8">Tablas en HTML</a></li>
+    <li><a href="#a9">Formularios en HTML</a></li>
+    <li><a href="#a10">Botones</a></li>
+    <li><a href="#a11">Secciones en HTML</a></li>
+    <li><a href="#a12">Etiquetas extras</a></li>
+
+  </ol>
+  <h2 id="a1">Anatomia de una etiqueta html</h2>
+  <img src="img/anatomia-etiqueta-html.png" alt="anatomia etiquteta html">
+  <ol>
+    <li><strong>La etiqueta de apertura:</strong> consiste en el nombre de la etiqueta (en este caso, p), encerrado
+      por paréntesis angulares (<>) de apertura y cierre. Establece dónde comienza o empieza a tener efecto la
+        etiqueta, en este caso, dónde es el comienzo del párrafo.</li>
+    <li><strong>La etiqueta de cierre:</strong> es igual que la etiqueta de apertura, excepto que incluye una barra
+      de cierre (/) antes del nombre de la etiqueta. Establece dónde termina la etiqueta, en este caso dónde
+      termina el párrafo.</li>
+    <li><strong>El contenido:</strong> este es el contenido de la etiqueta, que en este caso es sólo texto. </li>
+    <li><strong>El elemento:</strong> la etiqueta de apertura, más la etiqueta de cierre, más el contenido equivale
+      al elemento.</li>
+  </ol>
+  <br>
+  <h2 id="a2">Anatomia de un documento html</h2>
+  <img src="img/anatomia-documento-html.png" alt="anatomia documento html">
+  <ul>
+    <li><strong>!DOCTYPE html:</strong> el tipo de documento. Es un preámbulo requerido. Anteriormente,
+      cuando HTML era joven (cerca de 1991/1992), los tipos de documento actuaban como
+      vínculos a un conjunto de reglas que el código HTML de la página debía seguir para ser
+      considerado bueno, lo que podía significar la verificación automática de errores y algunas
+      otras cosas de utilidad. Sin embargo, hoy día es simplemente un artefacto antiguo que a
+      nadie le importa, pero que debe ser incluido para que todo funcione correctamente. Por
+      ahora, eso es todo lo que necesitas saber.</li>
+    <li><strong>html:</strong> esta etiqueta encierra todo el contenido de la página
+      entera y, a veces, se le conoce como la etiqueta raíz (root element).</li>
+    <li><strong>head:</strong> esta etiqueta actúa como un contenedor de todo
+      aquello que quieres incluir en la página HTML que no es contenido visible por los
+      visitantes de la página. Incluye cosas como palabras clave (keywords), una descripción de
+      la página que quieres que aparezca en resultados de búsquedas, código CSS para dar
+      estilo al contenido, declaraciones del juego de caracteres, etc.</li>
+    <li><strong>meta charset=”utf-8”:</strong> esta etiqueta establece el juego de caracteres que tu documento
+      usará en utf-8, que incluye casi todos los caracteres de todos los idiomas humanos.
+      Básicamente, puede manejar cualquier contenido de texto que puedas incluir. No hay
+      razón para no incluirlo, y puede evitar problemas en el futuro.</li>
+    <li><strong>title:</strong> establece el título de tu página, que es el título que
+      aparece en la pestaña o en la barra de título del navegador cuando la página es cargada, y
+      se usa para describir la página cuando es añadida a los marcadores o como favorita.</li>
+    <li> <strong>body:</strong> Encierra todo el contenido que deseas mostrar a los
+      usuarios web que visiten tu página, ya sea texto, imágenes, videos, juegos, pistas de audio
+      reproducibles, y demás. Estos, delimitados a su vez por otras etiquetas como las que
+      hemos visto.</li>
+  </ul>
+  <h2 id="a3">Sintaxix html</h2>
+  <ul>
+    <li>LAS MAYÚSCULAS O MINÚSCULAS SON INDIFERENTES AL ESCRIBIR
+      ETIQUETAS
+      En HTML las mayúsculas y minúsculas son indiferentes. Quiere decir que las etiquetas pueden ser
+      escritas con cualquier tipo de combinación de mayúsculas y minúsculas. Resulta sin embargo
+      aconsejable acostumbrarse a escribirlas en minúscula ya que otras tecnologías que pueden
+      convivir con nuestro HTML (XML por ejemplo) no son tan permisivas y nunca viene mal hacernos a
+      las buenas costumbres desde el principio, para evitar fallos triviales en un futuro.</li>
+    <li>¿CÓMO HACER COMENTARIOS EN HTML?
+      En un documento HTML, los comentarios se escriben entre los caracteres "!--" y "--" encerrado por paréntesis
+      angulares (<>) de apertura y cierre..</li>
+    <li>¿CÓMO HACER UN SALTO DE LÍNEA EN HTML?
+      Otra de las cosas importantes de conocer sobre la sintaxis básica del HTML es que los saltos de
+      línea no importan a la hora de interpretar una página. Un salto de línea será simplemente
+      interpretado como un separador de palabras, un espacio en blanco. Es por ello que para separar
+      líneas necesitamos usar la etiqueta de párrafo, o la etiqueta BR que significa un salto de línea
+      simple.
+      <br>Esto es una línea
+    </li>
+    <li>¿CÓMO ALINEAR UN TEXTO?
+      Los párrafos delimitados por etiquetas P pueden ser fácilmente justificados a la izquierda, centro o
+      derecha especificando dicha justificación en el interior de la etiqueta por medio de un atributo
+      <strong>"align"</strong>. Recordemos que los atributos no son más que un parámetro incluido en el interior
+      de la
+      etiqueta que ayudan a definir el funcionamiento de la etiqueta de una forma más personalizada.<br>
+      Así, si deseásemos introducir un texto alineado a la izquierda escribiríamos align="left":
+      <p align="left">Texto alineado a la izquierda</p>
+      Para una justificación al centro align="center":
+      <p align="center">Texto alineado al centro</p>
+      Para alinear a la derecha align="right":
+      <p align="right">Texto alineado a la derecha</p>
+    </li>
+  </ul>
+  <h2 id="a4">Formateo de Letra</h2>
+  <ul>
+    <li><strong>NEGRITA</strong> <br>
+      Podemos escribir texto en negrita incluyéndolo dentro de las etiquetas strong y su cierre.
+      <p><strong> Texto en negrita </strong> y texto normal</p>
+    </li>
+    <li><strong>ITÁLICA</strong> <br>
+      En este caso existen dos posibilidades, una corta: i y su cierre (italic) y otra un poco más larga: EM y su
+      cierre.
+      <p><i> Texto en itálica </i> y texto normal</p>
+    </li>
+    <li> <strong>SUBRAYADO</strong> <br>
+      HTML nos propone también para el subrayado la etiqueta: U (underlined). Sin embargo, el uso
+      de subrayados ha de ser aplicado con mucha precaución dado que los enlaces hipertexto van, a
+      no ser que se indique lo contrario, subrayados con lo que podemos confundir al lector y apartarlo
+      del verdadero interés de nuestro texto.
+      Además, cabe decir que la etiqueta U se ha quedado obsoleta, debido a que es algo que
+      realmente se debe hacer del lado del CSS, al ser básicamente un estilo.
+      <p><u> Texto subrayado</u> y texto normal</p>
+    </li>
+  </ul>
+  <h2 id="a5">Encabezados</h2>
+  <p>Hay varios tipos de encabezados, que se diferencian visualmente en el tamaño de la letra que
+    utilizan. La etiqueta en concreto es la H1, para los encabezados más grandes, H2 para los de
+    segundo nivel y así hasta H6 que es el encabezado más pequeño. Pero lo importante
+    es la estructura que denotan. Una página tendrá generalmente un encabezado de nivel 1 y dentro
+    varios de nivel 2.
+  </p>
+  <img src="img/Encabezados.png" alt="imagen de encabezados">
+
+  <h2 id="a6">Listas en HTML</h2>
+  <p>Podemos distinguir dos tipos de listas HTML:</p>
+  <ul>
+    <li>Listas desordenadas</li>
+    <li>Listas ordenadas</li>
+  </ul>
+  <p><strong>LISTAS DESORDENADAS</strong> <br>
+    Son delimitadas por las etiquetas UL y su cierre (unordered list). Cada uno de los elementos de la
+    lista es citado por medio de una etiqueta LI (list item).
+    Nota: La etiqueta LI tiene su respectiva etiqueta de cierre, aunque si no lo colocas, el navegador al
+    ver el siguiente LI interpretará que estás cerrando el anterior.
+    En la siguiente imagen vemos como seria la sintaxis.
+  </p>
+  <img src="img/listas-desordenadas.png" alt="sintaxis listas desordenadas">
+  <p>Países del mundo</p>
+  <ul>
+    <li>Argentina</li>
+    <li>Perú</li>
+    <li>Chile</li>
+  </ul>
+  <p><strong>Tipos de viñetas</strong><br>
+    Podemos definir el tipo de viñeta empleada para cada elemento. Para ello debemos especificarlo
+    por medio del atributo type. Si queremos que el estilo sea válido para toda la lista lo incluiremos
+    dentro de la etiqueta de apertura UL, mientras que si queremos hacerlo específico a un solo
+    elemento lo incluiremos dentro de la etiqueta LI. <br>
+    La sintaxis es del siguiente tipo: <br>
+    "<"ul type="tipo de viñeta">" <br>
+      Donde tipo de viñeta puede ser uno de los siguientes:</p>
+  <ul>
+    <li type="circle"> circle</li>
+    <li type="square"> square</li>
+    <li type="disc"> disc</li>
+  </ul>
+  <p><strong>LISTAS ORDENADAS</strong><br>
+    Las listas ordenadas sirven también para presentar información en diversos elementos o items,
+    con la particularidad que éstos estarán precedidos de un número o una letra para enumerarlos
+    manteniendo un orden.
+    Para implementar listas ordenadas usaremos la etiqueta OL (ordered list) y su cierre. Cada
+    elemento será igualmente indicado por la etiqueta LI(list item).</p>
+  <img src="img/listas-ordenadas.png" alt=" sintaxis listas ordenadas">
+  <p> Reglas de convivencia</p>
+  <ol>
+    <li> Respeta a tu compañero y escucha su opinión </li>
+    <li> Trata amablemente a tu entorno </li>
+  </ol>
+  <p><strong> Tipo de numeración</strong> <br>
+    Del mismo modo que para las listas desordenadas, las listas ordenadas ofrecen la posibilidad de
+    modificar el estilo. En concreto nos es posible especificar el tipo de numeración empleado
+    eligiendo entre números (1, 2, 3, ...), letras (a, b, c, ...) y sus mayúsculas (A, B, C, ...) y números
+    romanos en sus versiones mayúsculas (I, II, III, ...) y minúsculas (i, ii, iii, ...).
+    Para realizar dicha selección hemos de utilizar, como para el caso precedente, el atributo type, el
+    cual será situado dentro de la etiqueta OL.
+    Los valores que puede tomar el atributo en este caso son:</p>
+  <img src="img/tipo-de-numeracion.png" alt="tipo de numeración">
+  <p>Puede que en algún caso deseemos comenzar nuestra enumeración por un número o letra que no
+    tiene por qué ser necesariamente el primero de todos. Para solventar esta situación, podemos
+    utilizar un segundo atributo, start, que tendrá como valor un número. Este número, que por
+    defecto es 1, corresponde al valor a partir del cual comenzamos a definir nuestra lista. Para el caso
+    de las letras o los números romanos, el navegador se encarga de hacer la traducción del número
+    a la letra correspondiente.</p>
+  <img src="img/sintaxis-tipo-numeracion.png" alt="sintaxis tipo numeracion" height="500" width="400">
+  <p> Ordenamos por números </p>
+  <ol type="1">
+    <li> Elemento 1 </li>
+    <li> Elemento 2 </li>
+  </ol>
+  <p> Ordenamos por letras </p>
+  <ol type="a">
+    <li> Elemento a </li>
+    <li> Elemento b </li>
+  </ol>
+  <p>Ordenamos por números romanos empezando por el 10</p>
+  <ol type="i" start="10">
+    <li> Elemento x </li>
+    <li> Elemento xi </li>
+  </ol>
+  <h2>Enlaces en HTML</h2>
+  <p><strong>SINTAXIS DE UN ENLACE</strong> <br>
+    Para colocar un enlace, nos serviremos de las etiquetas <a> y su cierre. Dentro de la etiqueta de
+      apertura deberemos especificar asimismo el destino del enlace. Este destino será introducido bajo
+      forma de atributo, el cual lleva por nombre "href".
+      La sintaxis general de un enlace es por tanto de la forma: <br>
+      &lt; a&gt href="destino">contenido &lt; /a&gt <br>
+      Siendo el "contenido" un texto o una imagen. Es la parte de la página que se colocará activa y
+      donde deberemos pulsar para acceder al enlace. Por su parte, "destino" será una página, un
+      correo electrónico o un archivo.</p>
+  <a href="https://google.com">Home de google</a>
+  <p> Enlaces con imágenes <br>
+    Ahora, si queremos que el contenido del enlace sea una imagen y no un texto, deberemos colocar
+    la correspondiente etiqueta &lt; img&gt dentro de la etiqueta a.</p>
+  <a href="https://google.com"><img src="img/icono-google.png" alt="icono goolge"></a>
+  <p><strong>TIPOS DE ENLACES</strong> <br>
+    Tenemos que clasificarlos por su tipo, ya que,
+    dependiendo del mismo, algunas características pueden cambiar.
+    En función del destino los enlaces son clásicamente agrupados del siguiente modo:</p>
+  <ul>
+    <li><strong> Enlaces locales:</strong> los que se dirigen a otras páginas del mismo sitio web.</li>
+    <li><strong>Enlaces remotos:</strong> los dirigidos hacia páginas de otros sitios web.</li>
+  </ul>
+  <h2 id="a7">Imagenes en HTML</h2>
+  <p> La etiqueta que se usa para insertar una imagen es &lt; img&gt (image). Esta etiqueta no posee su
+    cierre correspondiente y en ella hemos de especificar obligatoriamente el paradero de nuestro
+    archivo gráfico mediante el atributo src (source).
+    La sintaxis queda entonces de la siguiente forma: <br>
+    &lt;img src="camino_hacia_el_archivo.jpg"&gt </p>
+  <p><strong>ATRIBUTO ALT</strong> <br>
+    Dentro de las comillas de este atributo colocaremos una breve descripción de la imagen. Esta
+    etiqueta no es indispensable, pero presenta varias utilidades. La sintaxis quedaría de esta manera: <br>
+    &lt;img src="mi_archivo.png" alt="Descripción de esta maravillosa imagen"&gt <br>
+    Primeramente, sirve para el posicionamiento de la página en buscadores. De los atributos alt el
+    buscador puede extraer palabras clave y le ayuda a entender qué función o contenido tiene la
+    imagen, y por lo tanto la página en sí. <br>
+    Otra utilidad importante la encontramos en determinadas aplicaciones, usadas por personas con
+    discapacidad. Navegadores para gente con discapacidad visual, por ejemplo, no muestran las
+    imágenes y por tanto los alt ofrecen la posibilidad de leerlas. <br>
+    Por último, durante el proceso de carga de la página y cuando la imagen no ha sido todavía
+    cargada, el navegador podría mostrar esta descripción, con lo que el navegante se puede hacer
+    una idea de lo que va en ese lugar. Si hubo problemas de conexión y no se pudo mostrar la
+    imagen, también podría usarse ese alt para mostrar al menos su descripción.
+  </p>
+  <h2 id="a8">Tablas en HTML</h2>
+  <p><strong>ETIQUETAS BÁSICAS PARA TABLAS EN HTML</strong> <br>
+    Para empezar, las tablas son definidas por las etiquetas &lt; table&gt y su cierre.
+    Dentro de estas dos etiquetas colocaremos todas las otras etiquetas de las tablas, hasta llegar a
+    las celdas. Dentro de las celdas ya es permitido colocar textos e imágenes que darán el contenido
+    a la tabla.</p>
+  <p> Las tablas son descritas por líneas de arriba a abajo (y luego por filas de izquierda a derecha).
+    Cada una de estas líneas, llamadas columnas, es definida por otra etiqueta y su cierre: &lt; tr&gt (table
+    row: columna de tabla). </p>
+  <p>Asimismo, dentro de cada línea, habrá diferentes celdas. Cada una de estas celdas será definida
+    por otra etiqueta: &lt; td&gt (table data). Dentro de ésta y su cierre será donde coloquemos nuestro
+    contenido, el contenido de cada celda.</p>
+  <p>También existe la etiqueta &lt; th&gt (table header), que sirve para crear una celda cuyo contenido esté
+    formateado como un título o cabecera de la tabla. En la práctica, lo que hace es poner en negrita y
+    centrado el contenido de esa celda.</p>
+  <img src="img/sintaxis-tablas-en-html.png" alt="sintaxis tablas en html">
+  <table>
+    <tr>
+      <th>Titulo Celda 1</th>
+      <th> Titulo Celda 2</th>
+    </tr>
+    <tr>
+      <td>Celda 1, línea 1</td>
+      <td> Celda 2, línea 1</td>
+    </tr>
+    <tr>
+      <td> Celda 1, línea 2</td>
+      <td> Celda 2, línea 2</td>
+    </tr>
+  </table>
+  <h2 id="a9">Formularios en HTML</h2>
+  <p>Los formularios son esas famosas cajas de texto y botones que podemos encontrar en muchas
+    páginas web. Son muy utilizados para realizar búsquedas o bien para introducir datos personales
+    por ejemplo en sitios de comercio electrónico. Los datos que el usuario introduce en estos
+    campos son enviados al correo electrónico del administrador del formulario o bien a un programa
+    que se encarga de procesarlo automáticamente.</p>
+  <p><strong>¿CÓMO HACER UN FORMULARIO EN HTML?</strong> <br>
+    Los formularios son definidos por medio de las etiquetas
+  <form> y su cierre. Entre estas dos
+    etiquetas colocaremos todos los campos y botones que componen el formulario. Dentro de esta
+    etiqueta <form> debemos especificar algunos atributos:
+      action: define el tipo de acción a llevar a cabo con el formulario. Como ya hemos dicho, existen
+      dos posibilidades:</p>
+      <ul>
+        <li>El formulario es enviado a una dirección de correo electrónico. Para esto hay que poner el mail en el
+          action.</li>
+        <li>El formulario es enviado a un programa o script que procesa su contenido.</li>
+      </ul>
+      &lt;form action="ruta del método que va a manejar la información"&gt&lt;/form&gt
+      <p><strong>method:</strong> Este atributo se encarga de especificar la forma en la que el formulario es enviado.
+        Los
+        dos valores posibles que puede tomar este atributo son POST y GET. <br>
+        <strong>enctype:</strong> Se utiliza para indicar la forma en la que viajará la información que se mande por el
+        formulario. En el caso más corriente, enviar el formulario por correo electrónico,
+      </p>
+      &lt;form action="ruta del método que va a manejar la información" method="POST" enctype="multipart/form-data"&gt;
+      <br>
+
+      contenido del formulario
+      <br>
+      &lt;/form&gt;
+      <p><strong>CAMPOS DE TEXTO</strong> <br>
+        <strong>ETIQUETA INPUT</strong> <br>
+        Las cajas de texto son colocadas por medio de la etiqueta &lt;input&gt;. Dentro de esta etiqueta hemos
+        de especificar el valor de dos atributos: type y name. <br>
+        &lt;input type="text" name="nombre"&gt;
+      </p>
+      <p><strong>ATRIBUTO TYPE</strong> <br>
+        <strong>NUMBER</strong> <br>
+        Este tipo permite al usuario ingresar números. Los navegadores vienen con validaciones para
+        evitar que el usuario ingrese algo que no sea números. Además, en los navegadores modernos,
+        los campos numéricos suelen venir con controles que permiten a los usuarios cambiar su valor de
+        forma gráfica. <br>
+        &lt;input type="number"&gt; <br>
+        Se ve asi: <br>
+        <input type="number" placeholder="ingrese un numero"> <br>
+      <p><strong>DATE</strong> <br>
+        Este le permite al usuario ingresar una fecha, ya sea mediante una caja de texto o una interfaz
+        gráfica con selector de fecha. <br>
+        &lt;input type="date"&gt; <br>
+        Se ve asi: <br>
+        <input type="date" placeholder=" ingrese la fecha"> <br>
+      </p>
+      <p> <strong>EMAIL</strong> <br>
+        Este tipo permite al usuario ingresar un mail. Los navegadores vienen con validaciones para
+        validar que se esté ingresando con el formato correcto de un mail. <br>
+        &lt;input type="email"&gt; <br>
+        Este input se va a ver como un input de texto común y corriente. <br>
+        <input type="email" placeholder="Ingrese su mail"> <br>
+      </p>
+      <p> <strong>TEXTO OCULTO</strong> <br>
+        Hay determinados casos en los que podemos desear esconder el texto escrito en el campo input,
+        por medio de círculos negros, de manera que aporte una cierta confidencialidad. Para esto vamos
+        a usar el type password. <br>
+        &lt;input type="password" placeholder="Contraseña" &gt; <br>
+        Se ve asi: <br>
+        <input type="password" placeholder="Contraseña"><br>
+      </p>
+      <p><strong>placeholder:</strong> este atributo especifica una pequeña pista que describe el valor esperado para el
+        campo (input).</p>
+      <p><strong>ETIQUETA LABEL</strong> <br>
+        El elemento &lt;label&gt; y su etiqueta de cierre, provee una descripción corta que acompaña al campo
+        de texto. Su función es indicarle al usuario que información debería ingresar en el campo o input.
+        También podemos asociar una etiqueta label a un campo para que el usuario pueda acceder al
+        campo de texto con solo clickear el label. <br>
+        La etiqueta podría verse de esta forma: <br>
+        &lt;label&gt;Nombre del Usuario &lt;/label&gt; <br>
+        &lt;input type="text" name="nombre"&gt; <br>
+        <label>Nombre del Usuario</label>
+        <input type="text" name="nombre">
+      </p>
+      <p><strong>LISTAS DE OPCIONES</strong> <br>
+        Las listas de opciones son ese tipo de menús desplegables que nos permiten elegir una (o varias)
+        de las múltiples opciones que nos proponen. Para construirlas emplearemos una etiqueta
+        SELECT, con su respectivo cierre.
+        Como para los casos ya vistos, dentro de esta etiqueta definiremos su nombre por medio del
+        atributo name. Cada opción será incluida en una línea precedida de la etiqueta OPTION.
+        Podemos ver, a partir de estas explicaciones, la forma más típica y sencilla de esta etiqueta: <br>
+        &lt;select name="estacion"&gt; <br>
+        &lt;option&gt;Primavera &lt;/option&gt; <br>
+        &lt;option&gt;Verano &lt;/option&gt; <br>
+        &lt;option&gt;Otoño &lt;/option&gt; <br>
+        &lt;option&gt; Invierno &lt;/option&gt; <br>
+        &lt;/select&gt; <br>
+        Esto en una página se vería así: <br>
+        <select name="estacion">
+          <option>Primavera</option>
+          <option>Verano</option>
+          <option>Otoño</option>
+          <option>Invierno</option>
+        </select>
+      </p>
+      <p>Atributos para la etiqueta select. <br>
+        <strong>size:</strong> indica el número de valores mostrados a la vez en la lista. <br>
+        <strong>multiple:</strong> permite la selección de más elementos de la lista. <br>
+        Atributo para la etiqueta option <br>
+        La etiqueta &lt;option&gt; puede asimismo ser modificada por medio de otro atributo.
+        selected: del mismo modo que multiple, este atributo no toma ningún valor, sino que simplemente
+        indica que la opción que lo presenta esta elegida por defecto. <br>
+        &lt;option selected&gt;Otoño &lt;/option&gt;
+      </p>
+      <p><strong>BOTONES DE RADIO</strong> <br>
+        Existe otra alternativa para plantear una elección, en este caso, obligamos al usuario a elegir
+        únicamente una de las opciones que se le proponen.
+        La etiqueta empleada en este caso es &lt;input&gt; en la cual usaremos el atributo type con el valor
+        radio. Este atributo colocara una casilla pinchable al lado del valor del input. <br>
+        &lt;input type="radio" name="estacion" value="1"&gt;Primavera <br>
+        &lt;br&gt; <br>
+        &lt;input type="radio" name="estacion" value="1"&gt;Verano <br>
+        &lt;br&gt; <br>
+        &lt;input type="radio" name="estacion" value="1"&gt;Otoño <br>
+        &lt;br&gt; <br>
+        &lt;input type="radio" name="estacion" value="1"&gt;Invierno <br>
+
+        se vería así: <br>
+        <input type="radio" name="estacion" value="1">Primavera
+        <br>
+        <input type="radio" name="estacion" value="2">Verano
+        <br>
+        <input type="radio" name="estacion" value="3">Otoño
+        <br>
+        <input type="radio" name="estacion" value="4">Invierno
+      </p>
+
+      <h2 id="a10">Botones</h2>
+      <p><strong>BOTÓN DE ENVÍO DE FORMULARIO (BOTÓN SUBMIT)</strong> <br>
+        Para dar por finalizado el proceso de relleno del formulario y hacerlo llegar a su gestor, el usuario
+        ha de enviarlo por medio de un botón previsto a tal efecto. Para esto vamos a utilizar la etiqueta
+        &lt;button&gt; y su respectivo cierre. Dentro el elemento button se puede poner texto (y etiquetas
+        como &lt;strong&gt;, &lt;br&gt;, &lt;img&gt;, etc.). <br>
+        Se vería así: <br>
+        &lt;button type="submit"&gt;Enviar &lt;/button&gt; <br>
+        Esto en la página se verá así: <br>
+        <button type="submit">Enviar</button>
+      </p>
+      <p><strong>BOTÓN DE BORRADO (BOTÓN DE RESET)</strong> <br>
+        Este botón nos permitirá borrar el formulario por completo, en el caso de que el usuario desee
+        rehacerlo desde el principio. Su estructura sintáctica es parecida a la anterior: <br>
+        &lt;button type="reset"&gt;Borrar &lt;/button&gt; <br>
+        <button type="reset">Borrar</button> <br>
+        A diferencia del botón de envío, indispensable en cualquier formulario, el botón de borrado resulta
+        meramente optativo y no es utilizado frecuentemente.
+      </p>
+      <p><strong>BOTONES NORMALES</strong> <br>
+        Dentro de los formularios también podemos colocar botones normales, pulsables como cualquier
+        otro botón. Estos botones por si solos no tienen mucha utilidad, pero podremos necesitarlos para
+        realizar acciones en el futuro. <br>
+        Su sintaxis es la siguiente: <br>
+        &lt;button type="button"&gt;Borrar &lt;/button&gt; <br>
+        <button type="button">Borrar</button>
+      </p>
+      <h2 id="a11">Secciones en HTML</h2>
+      <p>Las páginas web se trabajan con lo que se conoce como un esquema. El esquema (outline) de una
+        página web es un índice de los apartados de una página web que muestra la relación de jerarquía
+        entre los diferentes apartados y subapartados. El concepto de esquema se formalizó en HTML 5
+        con más precisión que en HTML 4 / XHTML 1 y explica algunas características y formas de
+        utilización de las etiquetas de secciones y bloques de contenido.
+        En relación con esto se pensó que las páginas de HTML se pueden dividir en secciones y en
+        HTML 5 se introdujo una serié de etiquetas que nos van a ayudar con la división de nuestra página
+        en secciones. Dentro de cada sección van a haber más etiquetas, esto es simplemente para que
+        podemos tener un índice de los apartados de la página web. <br>
+        La página dividida en secciones con sus respectivas etiquetas se ve así:</p>
+      <img src="img/secciones-pagina-web.png" alt=" imagen secciones pagina web"> <br>
+
+      <p><strong>&lt;section&gt;:</strong> se utiliza para representar una sección "general" dentro de un documento o
+        aplicación,
+        como un capítulo de un libro. Puede contener subsecciones y si lo acompañamos de h1-h6
+        podemos estructurar mejor toda la página creando jerarquías del contenido, algo muy favorable
+        para el buen posicionamiento web.</p>
+      <p><strong>&lt;article&gt;:</strong> representa un componente de una página que consiste en una composición
+        autónoma
+        en un documento, página, aplicación, o sitio web con la intención de que pueda ser reutilizado y
+        repetido.</p>
+      <p><strong>&lt;aside&gt;:</strong> representa una sección de la página que abarca un contenido relacionado con el
+        contenido que lo rodea, por lo que se le puede considerar un contenido independiente. Este
+        elemento puede utilizarse para efectos tipográficos, barras laterales, elementos publicitarios u otro
+        contenido que se considere separado del contenido principal de la página.</p>
+      <p><strong>&lt;header&gt;:</strong> representa un grupo de artículos introductorios o de navegación. Está
+        destinado a
+        contener por lo general la cabecera de la sección (un elemento h1-h6 o un elemento hgroup).</p>
+      <p><strong>&lt;nav&gt;:</strong> representa una sección de una página que enlaza a otras páginas o a otras partes
+        dentro
+        de la página. No todos los grupos de enlaces en una página necesita estar en un elemento nav,
+        sólo las secciones que constan de bloques de navegación principales son apropiadas para el
+        elemento de navegación.</p>
+      <p><strong>&lt;footer&gt;:</strong> representa el pie de una sección, con información acerca de la página/sección
+        que poco
+        tiene que ver con el contenido de la página, como el autor, el copyright o el año.</p>
+      <p><strong>&lt;hgroup&gt;:</strong> representa el encabezado de una sección. El elemento se utiliza para agrupar
+        un
+        conjunto de elementos h1-h6 cuando el título tiene varios niveles, tales como subtítulos o títulos
+        alternativos.</p>
+
+      <h2 id="a12">Etiquetas extras</h2>
+      <p><strong>ETIQUETA DIV</strong>  <br>
+        La etiqueta div se conoce como etiqueta de división. Esta etiqueta se usa en HTML para hacer
+        divisiones de contenido en la página web como (texto, imágenes, encabezado, pie de página,
+        barra de navegación, etc.). La etiqueta div tiene etiquetas de apertura (&lt;div&gt;) y de cierre (&lt;/div&gt;) y
+        es obligatorio cerrar la etiqueta. Div es la etiqueta más útil en el desarrollo web porque nos ayuda
+        a separar datos en la página web y podemos crear una sección particular para datos o funciones
+        particulares en las páginas web. Cabe aclarar que la etiqueta div genera un salto de línea.</p>
+        <ul>
+          <li>La etiqueta Div es una etiqueta de nivel de bloque</li>
+          <li>Es una etiqueta de contenedor genérica</li>
+          <li>Se utiliza para agrupar varias etiquetas de HTML para que se puedan crear secciones y
+            aplicarles estilo en conjunto.</li>
+        </ul>
+        <p><strong>ETIQUETA SPAN</strong> <br> 
+          El elemento span HTML es un contenedor en línea genérico para elementos y contenido en línea.
+          Se usa para agrupar elementos con fines de compartir un determinado estilo (mediante el uso de
+          los atributos de clase o id).
+          La mejor manera de usarlo es cuando no hay ningún otro elemento semántico disponible. Esta
+          etiqueta es muy similar a la etiqueta div, pero se diferencian en que div es una etiqueta a nivel de
+          bloque y span es una etiqueta en línea.
+          La etiqueta span es una etiqueta emparejada, lo que significa que tiene una etiqueta de apertura
+          (<) y de cierre (>), y es obligatorio cerrar la etiqueta.</p>
+          &lt;p&gt; Yo estudio &lt;span style="color: red"&gt;HTML &lt;/span&gt; , CSS y JavaScript &lt;/p&gt; <br>
+          <p>Yo estudio <span style="color: red">HTML</span> , CSS y JavaScript </p>
+          <footer>
+            <p align="center" >© Copyright Godoy Gustavo - 2023</p>
+          </footer>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- meta chaset es para que tome los carracteres especiales del idioma elegido -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apunte Colaborativo C1</title>
+</head>
+
+<body>
+  <h1>Apunte Colaborativo C1</h1>
+  <h2>Notas sobre la estructura</h2>
+  <ul>
+    <li>para que aparezca toda la estructura armada podemos poner el ! o html:5</li>
+    <li>lo segundo a configurar son los espacios, abajo a la derecha, pasarlo del predeterminado en 4 a 2</li>
+    <li>debemos poner el idioma en el que se desarrollará la pagina, lang es el atributo y "es" es el valor</li>
+  </ul>
+  <h3>head</h3>
+  <ul>
+    <li>dentro de head esta todo lo no visible de mi pagina, es decir la configuración</li>
+    <li>title es el nombre de la pestaña</li>
+  </ul>
+  <h3>body</h3>
+  <ul>
+    <li>dentro del body esta todo lo visible de mi pagina </li>
+    <li>aqui podemos poner etiquetas para titulos y subtitulos con h1 hasta h6, p para el texto, lorem para agregar
+      texto de relleno</li>
+  </ul>
+  <h3>!DOCTYPE</h3>
+  <p>Todos los documentos HTML deben comenzar con una declaración &lt!DOCTYPE>.
+
+    La declaración no es una etiqueta HTML. Es una "información" para el navegador sobre qué tipo de documento esperar.
+
+    En HTML 5, la declaración es simplemente:
+    &lt!DOCTYPE html>
+  </p>
+  <h1>Etiquetas de texto de HTML</h1>
+  <li>main: es el contenido principal dentro del body</li>
+  <li>h1-h6: titulos</li>
+  <li>p: parrafo</li>
+  <li>br: para saltos de linea (no tiene cierre)</li>
+  <li>img: imagen (esta etiqueta no se cierra)</li>
+  <li>a: ancla para luego redireccionar dentro de la misma pagina</li>
+  <li>ul: listado desordenado</li>
+  <li>ol: listado ordenado</li>
+  <li>hr: linea horizontal</li>
+  <li>comentarios !-- </li>
+  <li>strong: negrita</li>
+  <li>em: cursiva</li>
+  <li>s: tachado</li>
+
+  <h2>Ejemplo de Tratamiento de textos</h2>
+  <hr> <!--Linea horizontal para separar secciones-->
+  <h2>Ejemplo de tratamiento de textos</h2>
+  <p><strong>Este es un texto en negrita.</strong> Este en cambio no es negrita</p> <!--strong para texto en negrita-->
+  <em>Este es un texto en cursiva.</em> <s> Este es un texto tachado</s>
+
+  <fieldset>
+    <form action="x" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </fieldset>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Encabezado 1</th>
+        <th>Encabezado 2</th>
+        <th>Encabezado 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dato 1</td>
+        <td>Dato 2</td>
+        <td>Dato 3</td>
+      </tr>
+      <tr>
+        <td>Dato 4</td>
+        <td>Dato 5</td>
+        <td>Dato 6</td>
+      </tr>
+      <tr>
+        <td>Dato 7</td>
+        <td>Dato 8</td>
+        <td>Dato 9</td>
+      </tr>
+      <tr>
+        <td>Dato 10</td>
+        <td>Dato 11</td>
+        <td>Dato 12</td>
+      </tr>
+    </tbody>
+  </table>
+  Carolina Alejandra Pena Astigarraga 9:19
+
+</body>
+
+</html>
